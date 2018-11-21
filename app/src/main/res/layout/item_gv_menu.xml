@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/item_gv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_menu_bg">
+
+        <RelativeLayout
+            android:id="@+id/item_gv_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_menu_title">
+
+            <TextView
+                android:id="@+id/item_gv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="标题"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/item_gv_ico"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_menu_detail_normal" />
+
+        <TextView
+            android:id="@+id/item_gv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_gv_ico"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

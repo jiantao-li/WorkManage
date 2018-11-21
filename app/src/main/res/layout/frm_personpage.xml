@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF7F7">
+
+    <LinearLayout
+        android:id="@+id/frm_person_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3592E9"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/frm_person_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/user_pic_default" />
+
+            <TextView
+                android:id="@+id/frm_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignTop="@id/frm_person_photo"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/frm_person_photo"
+                android:gravity="center_vertical"
+                android:text="二胡"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/frm_person_lv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frm_person_title" />
+
+</android.support.constraint.ConstraintLayout>

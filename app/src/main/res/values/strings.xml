@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">工程管理</string>
+
+
+    <string name="menu_home">首页</string>
+    <string name="menu_list">工作单</string>
+    <string name="menu_phone">通讯录</string>
+    <string name="menu_iam">我的</string>
+
+</resources>

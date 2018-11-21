@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zbxh.workmanage.workpage.fragment.ContactsInfoPage">
+
+
+    <RelativeLayout
+        android:id="@+id/contact_info_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ECF7F7"
+        app:layout_constraintDimensionRatio="3:2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/contact_info_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_contact_info" />
+
+        <ImageView
+            android:id="@+id/contact_info_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_button_back" />
+
+        <TextView
+            android:id="@+id/contact_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="李建涛"
+            android:textColor="#ffffff"
+            android:textSize="23dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contact_info_lv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_info_top" />
+
+
+</android.support.constraint.ConstraintLayout>

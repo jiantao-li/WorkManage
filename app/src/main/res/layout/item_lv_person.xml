@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/item_lv_person_ico"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_lv_person_item"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/item_lv_person_ico"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/item_lv_person_ico"
+        android:gravity="center_vertical"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/item_lv_person_ico2"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_person_arrow" />
+
+</RelativeLayout>
